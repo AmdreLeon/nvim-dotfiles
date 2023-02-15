@@ -1,3 +1,11 @@
+--
+--  ███████╗███████╗████████╗████████╗██╗███╗   ██╗ ██████╗ ███████╗
+--  ██╔════╝██╔════╝╚══██╔══╝╚══██╔══╝██║████╗  ██║██╔════╝ ██╔════╝
+--  ███████╗█████╗     ██║      ██║   ██║██╔██╗ ██║██║  ███╗███████╗
+--  ╚════██║██╔══╝     ██║      ██║   ██║██║╚██╗██║██║   ██║╚════██║
+--  ███████║███████╗   ██║      ██║   ██║██║ ╚████║╚██████╔╝███████║
+--  ╚══════╝╚══════╝   ╚═╝      ╚═╝   ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚══════╝
+
 -- Defaults
 vim.g.mapleader = ' '
 vim.opt.syntax = 'on'
@@ -10,6 +18,7 @@ vim.opt.encoding = 'UTF-8'
 vim.opt.showtabline = 2
 vim.opt.mouse = 'a'
 vim.opt.wrap = true
+vim.opt.smartindent = true
 vim.opt.linebreak = true
 vim.opt.termguicolors = true
 vim.opt.relativenumber = true
@@ -21,8 +30,8 @@ vim.opt.hidden = true
 vim.opt.ignorecase = true
 vim.opt.expandtab = true
 vim.opt.tabstop = 2
-vim.opt.shiftwidth = 2
 vim.opt.softtabstop = 2
+vim.opt.shiftwidth = 2
 vim.g.editorconfig_enable = true
 vim.cmd 'set laststatus=3'
 vim.cmd 'set cursorline'
@@ -43,4 +52,14 @@ vim.api.nvim_create_autocmd('BufEnter', {
   group = vim_group,
 })
 
+vim.opt.scrolloff = 8
+vim.opt.signcolumn = 'yes'
+
+vim.opt.colorcolumn = "90"
+
 vim.g.do_filetype_lua = 1
+
+
+vim.cmd[[
+    set textwidth=80
+]]

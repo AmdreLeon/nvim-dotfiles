@@ -1,19 +1,17 @@
 return {
-  -- ColorSchemes
-  {
-    'folke/tokyonight.nvim',
-    lazy = false,
-    priority = 1000,
-    config = function()
-      local tokyonight = require 'tokyonight'
-      tokyonight.setup { style = 'night' }
-      tokyonight.load()
-    end,
-  },
+
   -- Load the other color schemes
+  'folke/tokyonight.nvim',
   'rafalbromirski/vim-aurora',
   'bluz71/vim-moonfly-colors',
   'cocopon/iceberg.vim',
+  'rose-pine/neovim',
+
+  -- Terminals 
+  'numToStr/Fterm.nvim',
+
+  --Run scripts
+  'is0n/jaq-nvim', 
 
   -- Faster Loading
   {
@@ -496,13 +494,9 @@ return {
     end,
   },
   -- File Tree
-  {
-    'nvim-tree/nvim-tree.lua',
-    config = true,
-    keys = {
-      { '<leader>n', ':NvimTreeToggle<CR>' },
-    },
-  },
+  'nvim-neo-tree/neo-tree.nvim',
+  'MunifTanjim/nui.nvim', 
+  
   {
     'goolord/alpha-nvim',
     event = 'VimEnter',
