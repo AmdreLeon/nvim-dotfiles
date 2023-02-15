@@ -13,6 +13,7 @@ vim.keymap.set("n", "<leader>rc", ":vs<CR>:Ex ~/.config/nvim<CR>")
 -- source
 vim.keymap.set("n", "<leader>so", vim.cmd.so)
 
+vim.keymap.set("n", "<leader>lz", ":Lazy <CR>")
 vim.keymap.set("n", "<leader>ww", ":wall<CR> :echo 'Save All!'<CR>")
 vim.keymap.set("n", "<leader>wq", ":wq<CR> :echo 'save'<CR>")
 vim.keymap.set("n", "<leader>qq", ":q!<CR>")
@@ -76,3 +77,4 @@ vim.keymap.set('n', '<leader>bd', ':bdelete<CR>', { silent = true })
 -- Move lines
 vim.keymap.set('v', '>', [[>gv]])
 vim.keymap.set('v', '<', [[<gv]])
+

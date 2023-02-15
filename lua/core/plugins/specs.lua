@@ -6,6 +6,7 @@ return {
   'bluz71/vim-moonfly-colors',
   'cocopon/iceberg.vim',
   'rose-pine/neovim',
+  'RRethy/nvim-base16',
 
   -- Terminals 
   'numToStr/Fterm.nvim',
@@ -350,7 +351,7 @@ return {
           fields = { 'kind', 'abbr', 'menu' },
           format = function(entry, vim_item)
             local lspkind_icons = {
-              Text = '',
+              Text = '',
               Method = '',
               Function = '',
               Constructor = ' ',
