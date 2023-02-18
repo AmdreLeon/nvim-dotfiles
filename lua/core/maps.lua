@@ -14,7 +14,7 @@ vim.keymap.set("n", "<leader>rc", ":vs<CR>:Ex ~/.config/nvim<CR>")
 vim.keymap.set("n", "<leader>so", vim.cmd.so)
 
 vim.keymap.set("n", "<leader>lz", ":Lazy <CR>")
-vim.keymap.set("n", "<leader>ww", ":wall<CR> :echo 'Save All!'<CR>")
+vim.keymap.set("n", "<leader>ww", ":w<CR> :echo 'Save All!'<CR>")
 vim.keymap.set("n", "<leader>wq", ":wq<CR> :echo 'save'<CR>")
 vim.keymap.set("n", "<leader>qq", ":q!<CR>")
 -- vim.keymap.set("n", "<leader>P", ":PlugInstall<CR>")
