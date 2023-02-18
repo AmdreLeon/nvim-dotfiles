@@ -16,4 +16,5 @@ vim.cmd.colorscheme(colorscheme)
 
 vim.cmd[[hi NonText guifg = bg]]
 vim.cmd[[hi VertSplit guifg = #5f6d64]]
+vim.cmd[[hi NeoTreeGitModified guifg = #83a570]]
 
