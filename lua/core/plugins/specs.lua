@@ -265,11 +265,12 @@ return {
 
       -- Attach
       local function on_attach()
-        vim.keymap.set('n', 'R', '<cmd>Lspsaga rename<CR>', { silent = true, desc = 'Rename Lspsaga' })
+        vim.keymap.set('n', '<leader>R', '<cmd>Lspsaga rename<CR>', { silent = true, desc = 'Rename Lspsaga' })
         vim.keymap.set('n', 'gd', '<cmd>Lspsaga preview_definition<cr>', { silent = true, desc = 'Preview Lsp' })
-        vim.keymap.set('n', 'K', require('hover').hover, { desc = 'hover.nvim', silent = true })
         vim.keymap.set('n', 'gD', '<cmd>Lspsaga lsp_finder<cr>', { silent = true, desc = 'Find Lsp' })
+        vim.keymap.set('n', 'K', require('hover').hover, { desc = 'hover.nvim', silent = true })
         vim.keymap.set('n', 'gK', require('hover').hover_select, { desc = 'hover.nvim (select)', silent = true })
+        vim.keymap.set("n", "<leader>ca",'<cmd>Lspsaga code_action<cr>', { silent = true, desc = 'Code Actions' })
       end
 
       -- lspconfig.sumneko_lua.setup {
